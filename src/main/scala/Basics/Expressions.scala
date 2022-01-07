@@ -9,7 +9,6 @@ object Expressions extends App {
    * In SCALA we have to think in terms of Expressions
    * Everything in Scala is Expression
    */
-
   val a=2+3
   println(a) // Here 2+3 is an expression . In SCALA everything is an Expression
 
