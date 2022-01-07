@@ -19,6 +19,14 @@ object Recursive extends App{
 
   println(aFactorial(20000))
 
+  //String Concatinator
+
+  def aStringConcatenator(aString: String, n: Int, acc: String): String=
+    if (n<=1) acc
+    else acc + aStringConcatenator(aString,n-1,aString + acc)
+
+  println(aStringConcatenator("Rashid ",3,""))
+
   //FIBONACCI NORMAL RECURSION
   def aFibonacci(n: Int): Int=
     if (n<=1) 1
