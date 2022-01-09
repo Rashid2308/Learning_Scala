@@ -49,14 +49,16 @@ object Recursive extends App{
 
   def aPrime(n: Int):Boolean= {
     @tailrec
-    def aPrime_Helper(x:Int): Boolean=
-      if (x<=1) true
-      else n%x!=0 && aPrime_Helper(x-1)
+    def aPrime_Helper(x:Int,result: Boolean): Boolean= {
+      if(!result)false
+      else if (x<=1) true
+      else aPrime_Helper(x-1, n%x!=0 && result)
+    }
 
-    aPrime_Helper(n/2)
+    aPrime_Helper(n/2,true)
   }
 
-  println(aPrime(23))
+  println(aPrime(24))
 
 
 }
