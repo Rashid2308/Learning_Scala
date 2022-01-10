@@ -60,5 +60,19 @@ object Recursive extends App{
 
   println(aPrime(24))
 
+  def searching(list: List[Int],num: Int): Boolean= {
+    if(list.head==num) true
+    else if(list.head==null) false
+    else searching(list.tail,num)
+  }
+
+  val mylist=List(1,2,4,5,6)
+  println(searching(mylist,5))
+
+
+
+
+
+
 
 }
