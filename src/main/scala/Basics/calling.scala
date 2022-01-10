@@ -13,7 +13,7 @@ object calling extends App{
     println(x)
   }
 
-  call_by_value(System.nanoTime())
-  call_by_name(System.nanoTime())
+  call_by_value(System.nanoTime()) // WHEN WE CALL BY CALL BY VALUE ONLY ONE TIME VALUE IS CALCULATED
+  call_by_name(System.nanoTime()) // WHEN WE CALL BY NAME VALUE AT EACH CALL IS CALCULATED
 
 }
