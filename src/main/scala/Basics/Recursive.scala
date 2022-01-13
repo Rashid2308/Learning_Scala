@@ -66,6 +66,8 @@ object Recursive extends App{
     else searching(list.tail,num)
   }
 
+
+
   val mylist=List(1,2,4,5,6)
   println(searching(mylist,5))
 
